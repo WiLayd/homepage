@@ -14,7 +14,6 @@ body {
     color: #000;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 100%);
 
 }
 
@@ -23,6 +22,8 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 100%);
+    padding: 15px 0px;
 }
 
 main {
@@ -38,7 +39,6 @@ main {
 .main__body {
     display: flex;
     gap: 10px;
-    margin-top: 15px;
 }
 
 .sidebar {
@@ -137,4 +137,73 @@ main {
     }
 }
 
-/*------------------------------------------*/
+/*-------------------Knowledge-----------------------*/
+
+.knowledge {
+    margin-top: 35px;
+    background-color: rgba(196, 196, 196, 0.35);
+    border-radius: 10px;
+}
+
+.knowledge-content {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 15px 25px;
+}
+
+.knowledge-title {
+    font-family: $Font-montserrat;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 129%;
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+
+.knowledge__link {
+    font-family: $Font-calibri;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 129%;
+    letter-spacing: 1.5px;
+    color: #FAFAFA;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: -17px;
+        background-color: #fff;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%
+    }
+}
+
+/*-------------------Languages-----------------------*/
+
+.knowledge__link_without-before {
+    &::before {
+        display: none;
+    }
+}
+
+/*--------------------Social-----------------------*/
+.social__list {
+    a {
+        font-family: $Font-calibri;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 129%;
+        letter-spacing: 1.5px;
+        color: #FAFAFA;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            color: rgba(74, 50, 232, 1)
+        }
+    }
+}

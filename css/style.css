@@ -96,8 +96,6 @@ body {
   color: #000;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 56, 244, 0.71)), to(rgba(224, 37, 206, 0.79)));
-  background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 100%);
 }
 
 .wrapper {
@@ -110,6 +108,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 56, 244, 0.71)), to(rgba(224, 37, 206, 0.79)));
+  background: linear-gradient(180deg, rgba(3, 56, 244, 0.71) 0%, rgba(224, 37, 206, 0.79) 100%);
+  padding: 15px 0px;
 }
 
 main {
@@ -129,7 +130,6 @@ main {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
-  margin-top: 15px;
 }
 
 .sidebar {
@@ -257,4 +257,72 @@ main {
   color: #4a32e8;
 }
 
-/*------------------------------------------*/
+/*-------------------Knowledge-----------------------*/
+.knowledge {
+  margin-top: 35px;
+  background-color: rgba(196, 196, 196, 0.35);
+  border-radius: 10px;
+}
+
+.knowledge-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0 15px 25px;
+}
+
+.knowledge-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 129%;
+  letter-spacing: 2.5px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.knowledge__link {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 129%;
+  letter-spacing: 1.5px;
+  color: #FAFAFA;
+  position: relative;
+}
+
+.knowledge__link::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -17px;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/*-------------------Languages-----------------------*/
+.knowledge__link_without-before::before {
+  display: none;
+}
+
+/*--------------------Social-----------------------*/
+.social__list a {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 129%;
+  letter-spacing: 1.5px;
+  color: #FAFAFA;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.social__list a:hover {
+  color: #4a32e8;
+}
