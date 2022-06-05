@@ -160,9 +160,17 @@ main {
       -ms-flex: 50%;
           flex: 50%;
   background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .sidebar__container {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.content__container {
   max-width: 450px;
   margin: 0 auto;
   padding: 0 10px;
@@ -325,4 +333,115 @@ main {
 
 .social__list a:hover {
   color: #4a32e8;
+}
+
+/*-------------------------Content-----------------*/
+.info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.info-block:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.info-block__general-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-block__black-title {
+  background-color: #545454;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 460px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-block-line {
+  height: 2px;
+  width: 100%;
+  background-color: #545454;
+}
+
+.info-block__headline {
+  padding: 5px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 129%;
+  color: #FFFFFF;
+}
+
+.info-block__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info-block__title {
+  font-family: "Fira Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 129%;
+  color: #343434;
+}
+
+.info-block__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #343434;
+}
+
+.info-block__time-text {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  color: #73808D;
+}
+
+.info-block__subtitle_smaller-line {
+  margin-top: 5px;
+  line-height: 120%;
+}
+
+.skills-block__link {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 129%;
+  color: #545454;
+}
+
+.skills-block__link:not(:last-child) {
+  margin-bottom: 10px;
 }

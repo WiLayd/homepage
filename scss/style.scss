@@ -55,9 +55,17 @@ main {
     flex-direction: column;
     flex: 50%;
     background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .sidebar__container {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.content__container {
     max-width: 450px;
     margin: 0 auto;
     padding: 0 10px;
@@ -71,7 +79,6 @@ main {
     gap: 30px;
 }
 
-.sidebar__avatar {}
 
 .sidebar__img {
     width: 150px;
@@ -205,5 +212,99 @@ main {
         &:hover {
             color: rgba(74, 50, 232, 1)
         }
+    }
+}
+
+/*-------------------------Content-----------------*/
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: flex-start;
+
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}
+
+.info-block__general-title {
+    display: flex;
+    align-items: center;
+}
+
+
+.info-block__black-title {
+    background-color: #545454;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    width: 460px;
+    justify-content: center;
+}
+
+.info-block-line {
+    height: 2px;
+    width: 100%;
+    background-color: #545454;
+}
+
+.info-block__headline {
+    padding: 5px 0;
+    font-family: $Font-montserrat;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 129%;
+    color: #FFFFFF;
+}
+
+.info-block__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-block__title {
+    font-family: $Font-calibri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 129%;
+    color: #343434;
+}
+
+.info-block__subtitle {
+    font-family: $Font-montserrat ;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #343434
+}
+
+.info-block__time-text {
+    font-family: $Font-calibri;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 200%;
+    color: #73808D
+}
+
+.info-block__subtitle_smaller-line {
+    margin-top: 5px;
+    line-height: 120%;
+}
+
+
+
+
+.skills-block__link {
+    font-family: $Font-montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 129%;
+    color: #545454;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
     }
 }
