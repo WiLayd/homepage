@@ -7,5 +7,5 @@
 - [linkedin](https://www.linkedin.com/in/wilayd/)
 
 # Codewars
-[![codewars](https://www.codewars.com/users/WiLayd/badges/large)]
+![codewars](https://www.codewars.com/users/WiLayd/badges/large)
 
